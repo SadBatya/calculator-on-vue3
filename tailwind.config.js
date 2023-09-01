@@ -3,11 +3,7 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
    darkMode: false, // or 'media' or 'class'
    theme: {
-     extend: {
-      backgroundImage: {
-        'backspace': "url('@/src/assets/backspace.png')",
-       }
-     },
+     extend: {},
    },
    variants: {
      extend: {},
