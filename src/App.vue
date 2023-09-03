@@ -39,7 +39,7 @@
         <div>
           <button @click="this.value += '0'" class="w-20 h-20 rounded-full bg-gray-300 m-1.5">0</button>
           <button @click="this.value += '.'" class="w-20 h-20 rounded-full bg-gray-300 m-1.5">.</button>
-          <button @click="this.value += '='" class="w-40 h-20 rounded-full bg-yellow-400 m-1.5">=</button>
+          <button @click="evalValue" class="w-40 h-20 rounded-full bg-yellow-400 m-1.5">=</button>
         </div>
       </div>
     </div>
@@ -55,7 +55,9 @@
       }
     },
     methods:{
-      
+      evalValue(){
+        this.value = eval(this.value)
+      }
     }
   }
 </script>
