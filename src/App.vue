@@ -56,7 +56,7 @@
     },
     methods:{
       evalValue(){
-        this.value = eval(this.value)
+        this.value = Number(eval(this.value))
       }
     }
   }
